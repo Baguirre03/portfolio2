@@ -124,3 +124,9 @@ button:focus-visible {
   background: brown;
   transform-origin: 0%;
 }
+
+.about-col-right {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./assets/ben-ski.jpg");
+}

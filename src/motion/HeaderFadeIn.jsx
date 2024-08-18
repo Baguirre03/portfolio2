@@ -9,7 +9,7 @@ export default function HeaderFadeIn({ content }) {
         y: 0,
         transition: { delay: 0.2, duration: 0.5 },
       }}
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
       className="relative z-0 font-black uppercase sm:text-5xl md:text-6xl"
     >
       {content}

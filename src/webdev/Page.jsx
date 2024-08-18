@@ -3,7 +3,6 @@ import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Socials from "./Socials";
 import { motion, useScroll, useSpring } from "framer-motion";
-import { useRef } from "react";
 
 export default function Page() {
   const { scrollYProgress } = useScroll();
@@ -19,6 +18,7 @@ export default function Page() {
       <Navbar></Navbar>
       <Socials></Socials>
       <Hero></Hero>
+      <About></About>
       <About></About>
     </>
   );

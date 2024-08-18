@@ -9,8 +9,8 @@ export default function ParagraphFadeIn({ children, duration }) {
         y: 0,
         transition: { delay: 0.2, duration: duration },
       }}
-      viewport={{ once: false, amount: 0.5 }}
-      className="relative z-0 text-3xl font-black uppercase"
+      viewport={{ once: true, amount: 0.5 }}
+      className="relative z-0 text-2xl font-black"
     >
       {children}
     </motion.p>

@@ -5,30 +5,31 @@ export default function About() {
   return (
     <section
       id="about"
-      className="web-about items-center justify-center content-center max-h-svh flex flex-col min-h-screen"
+      className="font-spartan web-about items-center justify-center content-center flex flex-col min-h-screen max-h-fit"
     >
-      <div className="about-container flex flex-col md:flex-row p-40">
-        <div className="about-col-left flex-1 md:w-2/3">
+      <div className="about-container flex flex-col md:flex-row p-20">
+        <div className="about-col-left flex-1 md:w-2/3 p-4">
           {" "}
           <HeaderFadeIn content="about"></HeaderFadeIn>
           <br></br>
           <ParagraphFadeIn duration={0.4}>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Nesciunt, pariatur? Saepe architecto eos labore eum, aliquam id
-              possimus laudantium amet ipsa unde maxime quis dicta dignissimos
-              ratione nulla corporis impedit.
+              I am currently a university student at Loyola University Chicago.
+              Here I am studying marketing with a minor in computer science.
+              About halfway through my collegiate journey and some marketing
+              internships, I found that coding was a better fit for me. Since
+              then, I have been learning web development via The Odin Project.
             </p>
           </ParagraphFadeIn>
           <br></br>
           <ParagraphFadeIn duration={0.6}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            repudiandae qui debitis mollitia ad culpa autem quas eius, alias a
-            vitae molestiae, vel quod quam officia est suscipit placeat
-            explicabo.
+            There I am also an active community member and contribute as much as
+            I can since its an open source curriculum! Apart from coding and
+            marketing, I love to do Wordle, listen to music and podcasts,
+            doodle, and take photos with my film camera (as seen to the right).
           </ParagraphFadeIn>
         </div>
-        <div className="about-col-right flex-1 md:w-1/3">picture here</div>
+        <div className="about-col-right flex-1 md:w-1/3 p-4 hidden md:block "></div>
       </div>
     </section>
   );
