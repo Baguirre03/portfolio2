@@ -15,7 +15,7 @@ export default function Hero() {
           <p className="text-lg mb-8 md:text-2xl text-gray-700">
             I'm a current senior at Loyola Unversity Chicago sudent, studying
             marketing and computer science. <br />I love to build projects and
-            solve unique problems :)!
+            solve unique problems!
           </p>
           <div className="flex justify-center space-x-4">
             <ButtonLink to="contact" content="Contact Me"></ButtonLink>
