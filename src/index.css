@@ -19,7 +19,6 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
@@ -113,4 +112,15 @@ button:focus-visible {
 
 .arrow {
   animation: fadeInOut 5s ease-in-out infinite;
+}
+
+.progress-bar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: brown;
+  transform-origin: 0%;
 }

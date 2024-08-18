@@ -4,7 +4,9 @@ export default function Navbar() {
   return (
     <nav className="w-full nav-section absolute bg-transparent">
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="text-2xl font-bold text-gray-900">BA</div>
+        <div className="text-2xl font-bold text-gray-900">
+          <Link to="/">BA</Link>
+        </div>
         <div className="hidden md:flex space-x-6">
           <Link
             to="/"
@@ -14,14 +16,17 @@ export default function Navbar() {
               Home{" "}
             </span>
           </Link>
-          <Link
-            to="/"
-            className="text-gray-700 hover:text-blue-600 duration-300 group transition-all ease-in-out"
+          <a
+            onClick={() => {
+              const el = document.getElementById("about");
+              el.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="hover:cursor-pointer text-gray-700 hover:text-blue-600 duration-300 group transition-all ease-in-out"
           >
             <span className="bg-left-bottom bg-gradient-to-r from-blue-600 to-blue-600 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
               About
             </span>
-          </Link>{" "}
+          </a>{" "}
           <Link
             to="/"
             className="text-gray-700 hover:text-blue-600 duration-300 group transition-all ease-in-out"
