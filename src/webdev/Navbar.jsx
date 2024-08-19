@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"; // If you're using React Router for nav
 
 export default function Navbar() {
   return (
-    <nav className="w-full nav-section absolute bg-transparent">
+    <nav className="sticky w-full nav-section  bg-transparent">
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="text-2xl font-bold text-gray-900">
           <Link to="/">BA</Link>
@@ -50,6 +50,16 @@ export default function Navbar() {
           >
             <span className="bg-left-bottom bg-gradient-to-r from-blue-600 to-blue-600 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
               Contact
+            </span>
+          </a>{" "}
+          <a
+            onClick={() => {
+              // download resume
+            }}
+            className="hover:cursor-pointer text-gray-700 hover:text-blue-600 duration-300 group transition-all ease-in-out"
+          >
+            <span className="bg-left-bottom bg-gradient-to-r from-blue-600 to-blue-600 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+              Resume
             </span>
           </a>{" "}
         </div>

@@ -1,6 +1,7 @@
 import ProjectCard from "../components/ProjectCard";
 import HeaderFadeIn from "../motion/HeaderFadeIn";
-import ParagraphFadeIn from "../motion/ParagraphFadeIn";
+import SlideInRight from "../motion/SlideIn";
+import SlideInLeft from "../motion/SlideInLeft";
 
 const projects = [
   {
@@ -42,17 +43,32 @@ export default function Projects() {
         <br />
         <div className="flex flex-col w-full justify-center">
           {projects.map((project, index) => {
-            // let delay = `0.${index}`;
-            // let numDelay = 0.2 + +delay;
-            return (
-              <ParagraphFadeIn key={index} duration={0.3}>
+            let slideRight = false;
+            if (index % 2) slideRight = true;
+            return slideRight ? (
+              <SlideInRight>
                 <ProjectCard
                   title={project.title}
                   description={project.description}
                   link={project.link}
                 ></ProjectCard>
-              </ParagraphFadeIn>
+              </SlideInRight>
+            ) : (
+              <SlideInLeft>
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                  link={project.link}
+                ></ProjectCard>
+              </SlideInLeft>
             );
+            //   <ParagraphFadeIn key={index} duration={0.3}>
+            //     <ProjectCard
+            //       title={project.title}
+            //       description={project.description}
+            //       link={project.link}
+            //     ></ProjectCard>
+            //   </ParagraphFadeIn>
           })}
         </div>
       </div>

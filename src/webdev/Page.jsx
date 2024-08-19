@@ -14,13 +14,13 @@ export default function Page() {
   });
 
   return (
-    <>
-      <motion.div className="progress-bar" style={{ scaleX }} />
+    <div>
       <Navbar></Navbar>
+      <motion.div className="progress-bar" style={{ scaleX }} />
       <Socials></Socials>
       <Hero></Hero>
       <About></About>
       <Projects></Projects>
-    </>
+    </div>
   );
 }
