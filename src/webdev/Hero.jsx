@@ -10,12 +10,12 @@ export default function Hero() {
         <DivFadeIn>
           <h1 className="font-extrabold mb-6 text-gray-900 sm:text-5xl md:text-6xl">
             Ben Aguirre
-            <br />A Full-Stack Developer
+            <br />A Full-Stack Developer (and marketer)
           </h1>
           <p className="text-lg mb-8 md:text-2xl text-gray-700">
-            I'm a current senior at Loyola Unversity Chicago sudent, studying
-            marketing and computer science. <br />I love to build projects and
-            solve unique problems!
+            I'm a current senior at Loyola Unversity Chicago, studying marketing
+            and computer science. <br />I love to build projects and solve
+            unique problems!
           </p>
           <div className="flex justify-center space-x-4">
             <ButtonLink to="contact" content="Contact Me"></ButtonLink>

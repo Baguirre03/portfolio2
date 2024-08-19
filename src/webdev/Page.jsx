@@ -1,6 +1,7 @@
 import About from "./About";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
+import Projects from "./Projects";
 import Socials from "./Socials";
 import { motion, useScroll, useSpring } from "framer-motion";
 
@@ -19,7 +20,7 @@ export default function Page() {
       <Socials></Socials>
       <Hero></Hero>
       <About></About>
-      <About></About>
+      <Projects></Projects>
     </>
   );
 }
