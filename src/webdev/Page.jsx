@@ -1,4 +1,5 @@
 import About from "./About";
+import Contact from "./Contact";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
@@ -21,6 +22,7 @@ export default function Page() {
       <Hero></Hero>
       <About></About>
       <Projects></Projects>
+      <Contact></Contact>
     </div>
   );
 }

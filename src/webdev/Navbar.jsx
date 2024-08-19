@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"; // If you're using React Router for nav
 
 export default function Navbar() {
   return (
-    <nav className="sticky w-full nav-section  bg-transparent">
+    <nav className="sticky w-full nav-section bg-transparent">
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="text-2xl font-bold text-gray-900">
           <Link to="/">BA</Link>
@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="hidden md:flex space-x-6">
           <a
             onClick={() => {
-              const el = document.getElementById("Home");
+              const el = document.getElementById("home");
               el.scrollIntoView({ behavior: "smooth" });
             }}
             className="hover:cursor-pointer text-gray-700 hover:text-blue-600 duration-300 group transition-all ease-in-out"

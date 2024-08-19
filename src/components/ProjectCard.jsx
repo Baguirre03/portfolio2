@@ -1,8 +1,7 @@
 import tests from "../assets/landscape.jpg";
-import ButtonLink from "./ButtonLink";
 import ProjectButton from "./ProjectButton";
 
-export default function ProjectCard({ title, content, threeLink }) {
+export default function ProjectCard({ title, threeLink }) {
   return (
     <div className="project-card bg-white text-black shadow-sm p-8 flex border overflow-hidden sh mb-4 ">
       <img src={tests} alt="Photo" className="w-1/3 object-cover h-full" />

@@ -1,16 +1,18 @@
-import ButtonLink from "../components/ButtonLink";
 import { FaArrowDown } from "react-icons/fa6";
 import { IconContext } from "react-icons";
 import DivFadeIn from "../motion/DivFadeIn";
 
 export default function Hero() {
   return (
-    <section className="font-spartan web-hero relative h-full min-h-screen flex items-center justify-center bg-white flex-col">
+    <section
+      id="home"
+      className="font-spartan web-hero relative h-full min-h-screen flex items-center justify-center bg-white flex-col"
+    >
       <div className="relative z-10 text-center px-6 py-12">
         <DivFadeIn>
           <h1 className="font-extrabold mb-6 text-gray-900 sm:text-5xl md:text-6xl">
             Ben Aguirre
-            <br />A Full-Stack Developer (and marketer)
+            <br />A Full-Stack Developer and Lifelong Learner
           </h1>
           <p className="text-lg mb-8 md:text-2xl text-gray-700">
             I'm a current senior at Loyola Unversity Chicago, studying marketing
@@ -18,7 +20,15 @@ export default function Hero() {
             unique problems!
           </p>
           <div className="flex justify-center space-x-4">
-            <ButtonLink to="contact" content="Contact Me"></ButtonLink>
+            <a
+              onClick={() => {
+                const el = document.getElementById("contact");
+                el.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="hover:cursor-pointer px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300"
+            >
+              Contact Me
+            </a>
           </div>
         </DivFadeIn>
       </div>
