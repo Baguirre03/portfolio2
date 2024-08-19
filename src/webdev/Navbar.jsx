@@ -8,14 +8,17 @@ export default function Navbar() {
           <Link to="/">BA</Link>
         </div>
         <div className="hidden md:flex space-x-6">
-          <Link
-            to="/"
-            className="text-gray-700 hover:text-blue-600 duration-300 group transition-all ease-in-out"
+          <a
+            onClick={() => {
+              const el = document.getElementById("Home");
+              el.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="hover:cursor-pointer text-gray-700 hover:text-blue-600 duration-300 group transition-all ease-in-out"
           >
             <span className="bg-left-bottom bg-gradient-to-r from-blue-600 to-blue-600 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-              Home{" "}
+              Home
             </span>
-          </Link>
+          </a>{" "}
           <a
             onClick={() => {
               const el = document.getElementById("about");
@@ -27,22 +30,28 @@ export default function Navbar() {
               About
             </span>
           </a>{" "}
-          <Link
-            to="/"
-            className="text-gray-700 hover:text-blue-600 duration-300 group transition-all ease-in-out"
+          <a
+            onClick={() => {
+              const el = document.getElementById("projects");
+              el.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="hover:cursor-pointer text-gray-700 hover:text-blue-600 duration-300 group transition-all ease-in-out"
           >
             <span className="bg-left-bottom bg-gradient-to-r from-blue-600 to-blue-600 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
               Projects
             </span>
-          </Link>{" "}
-          <Link
-            to="/"
-            className="text-gray-700 hover:text-blue-600 duration-300 group transition-all ease-in-out"
+          </a>{" "}
+          <a
+            onClick={() => {
+              const el = document.getElementById("contact");
+              el.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="hover:cursor-pointer text-gray-700 hover:text-blue-600 duration-300 group transition-all ease-in-out"
           >
             <span className="bg-left-bottom bg-gradient-to-r from-blue-600 to-blue-600 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
               Contact
             </span>
-          </Link>
+          </a>{" "}
         </div>
         <button className="md:hidden flex items-center text-gray-700 hover:text-blue-600 focus:outline-none">
           <svg

@@ -1,11 +1,11 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IconContext } from "react-icons"; // Import social icons
+import { IconContext } from "react-icons";
 
 export default function Socials() {
   return (
     <div className="socials fixed bottom-0 left-0 mb-4 ml-4 flex flex-col space-y-4">
       <a
-        href="https://github.com/yourusername" // Replace with your GitHub profile link
+        href="https://github.com/baguirre03"
         target="_blank"
         rel="noopener noreferrer"
         className=" text-gray-800 hover:text-gray-600 transition duration-300"
@@ -24,7 +24,7 @@ export default function Socials() {
         </IconContext.Provider>
       </a>
       <a
-        href="https://linkedin.com/in/yourusername" // Replace with your LinkedIn profile link
+        href="https://linkedin.com/in/ben-aguirre"
         target="_blank"
         rel="noopener noreferrer"
         className="text-gray-800 hover:text-gray-600 transition duration-300"
