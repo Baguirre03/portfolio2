@@ -118,14 +118,18 @@ button:focus-visible {
   transform-origin: 0%;
 }
 
-.about-col-right {
-  /* background-position: center;
-  background-size: cover; */
-  /* background-image: url("./assets/ben-ski.jpg"); */
-}
-
 .project-card {
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border: solid 5px rgb(0, 0, 0);
   line-height: 1.5em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.project-photo {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact-form {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }

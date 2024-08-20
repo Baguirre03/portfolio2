@@ -53,9 +53,10 @@ export default function Navbar() {
             </span>
           </a>{" "}
           <a
-            onClick={() => {
-              // download resume
-            }}
+            href="./src/assets/Ben_Aguirre_Resume_2024.pdf" // add resume here
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Resume"
             className="hover:cursor-pointer text-gray-700 hover:text-blue-600 duration-300 group transition-all ease-in-out"
           >
             <span className="bg-left-bottom bg-gradient-to-r from-blue-600 to-blue-600 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">

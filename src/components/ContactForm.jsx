@@ -38,8 +38,8 @@ export default function ContactForm() {
         y: 0,
         transition: { delay: 0.2, duration: 0.5 },
       }}
-      viewport={{ once: false, amount: 0.5 }}
-      className="font-spartan w-3/5 bg-white border border-gray-200 rounded-lg p-4 shadow-sme rounded-lg shadow-lg"
+      viewport={{ once: true, amount: 0.5 }}
+      className="contact-form font-spartan w-3/5 bg-white border border-gray-200 p-4 shadow-sme rounded-lg shadow-lg"
     >
       <form onSubmit={handleSubmit}>
         <div className="mb-4">

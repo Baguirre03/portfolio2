@@ -44,7 +44,7 @@ export default function Socials() {
         </IconContext.Provider>
       </a>
       <a
-        href="https://linkedin.com/in/ben-aguirre" // add resume here
+        href="./src/assets/Ben_Aguirre_Resume_2024.pdf" // add resume here
         target="_blank"
         rel="noopener noreferrer"
         className="text-gray-800 hover:text-gray-600 transition duration-300"
