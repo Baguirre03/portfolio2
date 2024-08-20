@@ -4,7 +4,7 @@ import mobile from "../mobile";
 export default function SlideInLeft({ children, duration }) {
   return (
     <motion.div
-      initial={{ opacity: mobile ? 1 : 0, x: -75 }}
+      initial={{ opacity: mobile ? 1 : 0, x: mobile ? 0 : -75 }}
       whileInView={{
         opacity: 1,
         x: 0,

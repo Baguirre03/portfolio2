@@ -4,7 +4,7 @@ import mobile from "../mobile";
 export default function HeaderFadeIn({ content }) {
   return (
     <motion.h1
-      initial={{ opacity: mobile ? 1 : 0, y: 50 }}
+      initial={{ opacity: mobile ? 1 : 0, y: mobile ? 0 : 50 }}
       whileInView={{
         opacity: 1,
         y: 0,
