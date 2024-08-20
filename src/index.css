@@ -95,6 +95,19 @@ button:focus-visible {
   color: white;
 }
 
+.nav-links-small-each.shown {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.nav-links-small-each {
+  display: none;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
 .progress-bar {
   position: fixed;
   z-index: 1000;
@@ -121,17 +134,4 @@ button:focus-visible {
 
 .contact-form {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-.nav-links-small-each.shown {
-  display: block;
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.nav-links-small-each {
-  display: none;
-  transform: translateY(-20px);
-  opacity: 0;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }

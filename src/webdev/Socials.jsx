@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { IoNewspaperOutline } from "react-icons/io5";
+import pdf from "../assets/Ben_Aguirre_Resume_2024.pdf";
 
 export default function Socials() {
   return (
@@ -44,7 +45,7 @@ export default function Socials() {
         </IconContext.Provider>
       </a>
       <a
-        href="./src/assets/Ben_Aguirre_Resume_2024.pdf" // add resume here
+        href={pdf}
         target="_blank"
         rel="noopener noreferrer"
         className="text-gray-800 hover:text-gray-600 transition duration-300"

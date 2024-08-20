@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import pdf from "../assets/Ben_Aguirre_Resume_2024.pdf";
 
 export default function Navbar() {
   return (
-    <nav className="sticky nav-section w-full bg-transparent">
-      <div className=" mx-auto px-4 py-4 flex items-center justify-between">
+    <nav className="sticky nav-section w-full bg-transparent flex-nowrap">
+      <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="text-2xl font-bold text-gray-900">
           <Link to="/" className="hover:text-blue-500 text-black">
             BA
@@ -89,8 +90,8 @@ export default function Navbar() {
           </svg>
         </button>
       </div>
-      <div className="nav-links-small-each md:hidden">
-        <div className="px-2 space-y-1 md:hidden flex flex-col justify-start items-end">
+      <div className="nav-links-small-each md:hidden w-max-full">
+        <div className="px-2 space-y-1 w-screen md:hidden flex flex-col justify-start items-end">
           <a
             onClick={() => {
               const el = document.getElementById("home");
@@ -136,7 +137,7 @@ export default function Navbar() {
             </span>
           </a>{" "}
           <a
-            href="./src/assets/Ben_Aguirre_Resume_2024.pdf"
+            href={pdf}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Resume"
