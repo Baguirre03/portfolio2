@@ -5,7 +5,9 @@ export default function Navbar() {
     <nav className="sticky w-full nav-section bg-transparent">
       <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="text-2xl font-bold text-gray-900">
-          <Link to="/">BA</Link>
+          <Link to="/" className="hover:text-blue-500 text-black">
+            BA
+          </Link>
         </div>
         <div className="hidden md:flex space-x-6">
           <a

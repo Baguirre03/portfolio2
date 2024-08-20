@@ -18,8 +18,8 @@ export default function About() {
               I am currently a university student at Loyola University Chicago.
               Here I am studying marketing with a minor in computer science.
               About halfway through my collegiate journey and some marketing
-              internships, I found that coding was a better fit for me. Since
-              then, I have been learning web development via{" "}
+              internships (3), I found that coding was a better fit for me.
+              Since then, I have been learning web development via{" "}
               <a
                 className="text-blue-600"
                 href="https://www.theodinproject.com/"
@@ -32,7 +32,7 @@ export default function About() {
           <br></br>
           <ParagraphFadeIn duration={0.6}>
             There I am also an active community member (and moderator) and
-            contribute as much as I can since its an open source curriculum
+            contribute as much as I can since its an open source curriculum.
             Apart from coding and marketing, I love to do Wordle, listen to
             music and podcasts, doodle, and take photos with my film camera (as
             seen to the right).

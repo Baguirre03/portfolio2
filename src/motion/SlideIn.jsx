@@ -7,9 +7,9 @@ export default function SlideIn({ children, duration }) {
       whileInView={{
         opacity: 1,
         x: 0,
-        transition: { delay: 0.3, duration: duration },
+        transition: { delay: 0.2, duration: duration },
       }}
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: false, amount: 0.2 }}
       className="relative z-0 text-2xl font-black"
     >
       {children}
