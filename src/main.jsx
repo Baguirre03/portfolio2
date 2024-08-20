@@ -2,7 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import Page from "./webdev/Page";
+import mobile from "./mobile.js";
+import { MotionGlobalConfig } from "framer-motion";
+import Page from "./webdev/Page.jsx";
+
+MotionGlobalConfig.skipAnimations = false;
 
 const router = createBrowserRouter([
   {

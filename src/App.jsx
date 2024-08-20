@@ -1,10 +1,6 @@
 import "./App.css";
 import "./index.css";
 import ButtonLink from "./components/ButtonLink";
-import mobile from "./mobile.js";
-import { MotionGlobalConfig } from "framer-motion";
-
-MotionGlobalConfig.skipAnimations = mobile;
 
 function App() {
   return (

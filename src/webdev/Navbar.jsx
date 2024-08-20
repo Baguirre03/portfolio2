@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom"; // If you're using React Router for navigation
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="sticky w-full nav-section bg-transparent">
-      <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
+    <nav className="sticky nav-section w-full bg-transparent">
+      <div className=" mx-auto px-4 py-4 flex items-center justify-between">
         <div className="text-2xl font-bold text-gray-900">
           <Link to="/" className="hover:text-blue-500 text-black">
             BA
@@ -70,7 +70,6 @@ export default function Navbar() {
           className="md:hidden flex items-center text-gray-700 hover:text-blue-600 focus:outline-none"
           onClick={() => {
             const el = document.querySelector(".nav-links-small-each");
-            console.log(el);
             el.classList.toggle("shown");
           }}
         >

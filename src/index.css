@@ -65,10 +65,6 @@ button:focus-visible {
   z-index: 1000;
 }
 
-.nav-section {
-  z-index: 1000;
-}
-
 @keyframes fadeInOut {
   0% {
     opacity: 0;
@@ -104,7 +100,7 @@ button:focus-visible {
   z-index: 1000;
   top: 0;
   left: 0;
-
+  width: 100vw;
   right: 0;
   height: 10px;
   background: brown;
