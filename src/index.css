@@ -119,9 +119,9 @@ button:focus-visible {
 }
 
 .about-col-right {
-  background-position: center;
-  background-size: cover;
-  background-image: url("./assets/ben-ski.jpg");
+  /* background-position: center;
+  background-size: cover; */
+  /* background-image: url("./assets/ben-ski.jpg"); */
 }
 
 .project-card {

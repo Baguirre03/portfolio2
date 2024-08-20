@@ -62,13 +62,6 @@ export default function Projects() {
                 ></ProjectCard>
               </SlideInLeft>
             );
-            //   <ParagraphFadeIn key={index} duration={0.3}>
-            //     <ProjectCard
-            //       title={project.title}
-            //       description={project.description}
-            //       link={project.link}
-            //     ></ProjectCard>
-            //   </ParagraphFadeIn>
           })}
         </div>
       </div>

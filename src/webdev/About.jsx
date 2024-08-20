@@ -1,5 +1,6 @@
 import HeaderFadeIn from "../motion/HeaderFadeIn";
 import ParagraphFadeIn from "../motion/ParagraphFadeIn";
+import me from "../assets/ben-ski.jpg";
 
 export default function About() {
   return (
@@ -37,7 +38,13 @@ export default function About() {
             seen to the right).
           </ParagraphFadeIn>
         </div>
-        <div className="about-col-right flex-1 md:w-1/3 p-4 hidden md:block "></div>
+        <div className="about-col-right hidden lg:block lg:flex-1 ">
+          <img
+            src={me}
+            alt="Ben Skiing"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
     </section>
   );
