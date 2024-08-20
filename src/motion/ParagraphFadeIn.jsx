@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function ParagraphFadeIn({ children, duration }) {
   return (
-    <motion.p
+    <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{
         opacity: 1,
@@ -13,6 +13,6 @@ export default function ParagraphFadeIn({ children, duration }) {
       className="relative z-0 text-2xl font-black"
     >
       {children}
-    </motion.p>
+    </motion.div>
   );
 }

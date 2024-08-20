@@ -13,7 +13,10 @@ export default function ProjectCard({
   description,
 }) {
   return (
-    <div className="project-card bg-white text-black shadow-sm p-4 sm:p-8 flex flex-col sm:flex-row border overflow-hidden mb-4">
+    <div
+      key={title}
+      className="project-card bg-white text-black shadow-sm p-4 sm:p-8 flex flex-col sm:flex-row border overflow-hidden mb-4"
+    >
       <img
         src={src}
         alt="Photo"
@@ -24,12 +27,12 @@ export default function ProjectCard({
         <p className="text-base sm:text-xl mb-2">{description}</p>
         <div className="skill-container flex flex-wrap mt-2 gap-3 sm:gap-5">
           {skills.map((skill) => (
-            <Skill key={skill}>{skill}</Skill>
+            <Skill>{skill}</Skill>
           ))}
         </div>
         <div className="flex flex-wrap gap-4 mt-3">
           {links.map((link) => (
-            <ProjectButton key={link} link={link} />
+            <ProjectButton link={link} />
           ))}
         </div>
       </div>

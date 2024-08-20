@@ -83,7 +83,7 @@ export default function Projects() {
             let slideRight = false;
             if (index % 2) slideRight = true;
             return slideRight ? (
-              <SlideInRight>
+              <SlideInRight key={project.title}>
                 <ProjectCard
                   title={project.title}
                   description={project.description}
@@ -93,7 +93,7 @@ export default function Projects() {
                 ></ProjectCard>
               </SlideInRight>
             ) : (
-              <SlideInLeft>
+              <SlideInLeft key={project.title}>
                 <ProjectCard
                   title={project.title}
                   description={project.description}
