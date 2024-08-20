@@ -37,7 +37,7 @@ const projects = [
       },
       { title: "Live", src: "https://members-only-top.fly.dev/" },
     ],
-    skills: ["Node.JS", "MongoDB", "Express", "Passport.js", "Pug", "CSS"],
+    skills: ["Node.js", "MongoDB", "Express", "Passport.js", "Pug", "CSS"],
     src: members,
   },
   {
