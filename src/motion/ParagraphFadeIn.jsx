@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
+import mobile from "../mobile";
 
 export default function ParagraphFadeIn({ children, duration }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: mobile ? 1 : 0, y: 50 }}
       whileInView={{
         opacity: 1,
         y: 0,
