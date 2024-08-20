@@ -29,7 +29,7 @@ const projects = [
   {
     title: "Members Only",
     description:
-      "Brief description of the project, highlighting key aspects and technologies used.",
+      "A fullstack message board that features user-specific content and strong security. It uses Passport.js for account management and Bcrypt for secure password hashing. The platform includes a role-based access control system, which customizes the user interface and message visibility based on user roles and secret passcodes.",
     links: [
       {
         title: "Repository",
