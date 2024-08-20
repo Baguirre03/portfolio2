@@ -56,7 +56,7 @@ export default function Navbar() {
             </span>
           </a>{" "}
           <a
-            href="./src/assets/Ben_Aguirre_Resume_2024.pdf"
+            href={pdf}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Resume"
