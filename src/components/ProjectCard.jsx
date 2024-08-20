@@ -1,7 +1,11 @@
 import tests from "../assets/landscape.jpg";
 import ProjectButton from "./ProjectButton";
+import Skill from "./SkillsUsed";
 
-export default function ProjectCard({ title, threeLink }) {
+const testSkills = ["react", "js", "css", "tailwind", "nodejs"];
+const testLinks = ["one", "two", "three"];
+
+export default function ProjectCard({ title, links, skills }) {
   return (
     <div className="project-card bg-white text-black shadow-sm p-8 flex border overflow-hidden sh mb-4 ">
       <img src={tests} alt="Photo" className="w-1/3 object-cover h-full" />
@@ -13,10 +17,15 @@ export default function ProjectCard({ title, threeLink }) {
           deserunt dignissimos, nam consequatur quaerat eius? Quos expedita quia
           optio?
         </p>
-        <div className="flex gap-4">
-          <ProjectButton>Link</ProjectButton>
-          <ProjectButton>Link2</ProjectButton>
-          {threeLink && <ProjectButton>Link</ProjectButton>}
+        <div className="skill-container flex mt-2 gap-5">
+          {testSkills.map((skill) => (
+            <Skill>{skill}</Skill>
+          ))}
+        </div>
+        <div className="flex gap-4 mt-3">
+          {testLinks.map((link) => (
+            <ProjectButton>{link}</ProjectButton>
+          ))}
         </div>
       </div>
     </div>
