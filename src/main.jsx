@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path: "marketing",
-    element: <h1>Implement marketing</h1>,
+    element: <h1>Page is Currently a WIP!</h1>,
   },
 ]);
 

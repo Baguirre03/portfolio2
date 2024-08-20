@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Socials from "./Socials";
 import { motion, useScroll, useSpring } from "framer-motion";
+import mobile from "../mobile";
 
 export default function Page() {
   const { scrollYProgress } = useScroll();
@@ -17,7 +18,9 @@ export default function Page() {
   return (
     <div>
       <Navbar></Navbar>
-      <motion.div className="progress-bar" style={{ scaleX }} />
+      {mobile ? null : (
+        <motion.div className="progress-bar" style={{ scaleX }} />
+      )}
       <Socials></Socials>
       <Hero></Hero>
       <About></About>
