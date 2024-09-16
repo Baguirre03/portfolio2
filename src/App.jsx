@@ -1,8 +1,13 @@
 import "./App.css";
 import "./index.css";
 import ButtonLink from "./components/ButtonLink";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.location.href = "/web";
+  }, []);
+
   return (
     <div className="font-spartan intro-hero flex items-center justify-center h-full">
       <div className="home-container p-5">
