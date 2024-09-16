@@ -13,10 +13,10 @@ function App() {
           <p className="text-3xl mb-6 text-white">Are you interested in my:</p>
           <div className="flex justify-center space-x-4">
             <ButtonLink to="web" content="Web Development Work"></ButtonLink>
-            <ButtonLink
+            {/* <ButtonLink
               to="marketing"
               content="Marketing Experience"
-            ></ButtonLink>
+            ></ButtonLink> */}
           </div>
         </div>
       </div>
